@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante do João</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.boulevardbrasilia.com.br/_next/image?url=https%3A%2F%2Fpublic.esperienza.com.br%2Fboulevardbrasilia-aGsp28PDQhYAvVE5oYLVs5rscLS6kFbL%2Floja%2FJo%C3%A3o%20brasileiro.png&w=3840&q=75" alt="Logo do Restaurante do João" class="logo">
+        <div class="header-content">
+            <h1>Restaurante do João</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre Nós</a>
+                <a href="contato.html">Fale Conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="cardapio">
+            <div class="cardapio-item">
+                <img src="https://img.nsctotal.com.br/wp-content/uploads/2023/09/Feijoada.jpg" alt="Feijoada" class="item-img">
+                <div class="item-info">
+                    <h3>Feijoada</h3>
+                    <p>Descrição: Uma deliciosa feijoada tradicional com todos os acompanhamentos.</p>
+                    <p>Preço: R$ 49,90</p>
+                    <button onclick="adicionarAoCarrinho('Feijoada', 49.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://assets.unileversolutions.com/recipes-v2/215082.jpg" alt="Strogonoff" class="item-img">
+                <div class="item-info">
+                    <h3>Bife à parmegiana</h3>
+                    <p>Descrição: Delicoso bife à parmegiana.</p>
+                    <p>Preço: R$ 39,90</p>
+                    <button onclick="adicionarAoCarrinho('Bife à parmegiana', 39.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://catracalivre.com.br/wp-content/uploads/2023/10/moqueca-peixe.jpg" alt="Moqueca de Peixe" class="item-img">
+                <div class="item-info">
+                    <h3>Moqueca de Peixe</h3>
+                    <p>Descrição: Moqueca de peixe com arroz e farofa.</p>
+                    <p>Preço: R$ 44,90</p>
+                    <button onclick="adicionarAoCarrinho('Moqueca de Peixe', 44.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://renata.com.br/images/receitas/141/renata-imagem-receitas-lasanha-a-bolonhesa-share.jpg" alt="Lasanha à Bolonhesa" class="item-img">
+                <div class="item-info">
+                    <h3>Lasanha à Bolonhesa</h3>
+                    <p>Descrição: Lasanha à bolonhesa com molho de queijo.</p>
+                    <p>Preço: R$ 39,90</p>
+                    <button onclick="adicionarAoCarrinho('Lasanha à Bolonhesa', 39.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://www.unileverfoodsolutions.com.br/dam/global-ufs/mcos/SLA/calcmenu/recipes/BR-recipes/chicken-&-other-poultry-dishes/strogonoff-de-frango/main-header.jpg" alt="Strogonoff de Frango" class="item-img">
+                <div class="item-info">
+                    <h3>Strogonoff de Frango</h3>
+                    <p>Descrição: Strogonoff de frango com batata palha.</p>
+                    <p>Preço: R$ 37,90</p>
+                    <button onclick="adicionarAoCarrinho('Strogonoff de Frango', 37.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://www.sabornamesa.com.br/media/k2/items/cache/431b945f5e067c1db39db74162af6e1c_XL.jpg" alt="Feijão Tropeiro" class="item-img">
+                <div class="item-info">
+                    <h3>Picanha</h3>
+                    <p>Descrição: Picanha grelhada acompanhada de farofa e arroz</p>
+                    <p>Preço: R$ 34,90</p>
+                    <button onclick="adicionarAoCarrinho('Picanha', 34.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/04/3cb5530b66938475b217183a18974de301f5b0fd.jpg" alt="Picanha" class="item-img">
+                <div class="item-info">
+                    <h3>Pizza de calabresa</h3>
+                    <p>Descrição: Deliosa pizza de clabresa feita no forno à lenha.</p>
+                    <p>Preço: R$ 54,90</p>
+                    <button onclick="adicionarAoCarrinho('Pizza de calabresa', 54.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="cardapio-item">
+                <img src="https://i0.wp.com/www.flamboesa.com.br/wp-content/uploads/2015/02/DSC00951.jpg?fit=4809%2C3195&ssl=1" alt="Tiramisu" class="item-img">
+                <div class="item-info">
+                    <h3>Porção de brigadeiros</h3>
+                    <p>Descrição: Porção de 10 brigadeiros caseiros deliciosos.</p>
+                    <p>Preço: R$ 19,90</p>
+                    <button onclick="adicionarAoCarrinho('Porção de brigadeiros', 19.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrinho de compras -->
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <ul id="carrinho-itens"></ul>
+            <p id="carrinho-total">Total: R$ 0,00</p>
+            <button id="remover-tudo" onclick="removerTudo()">Remover Tudo</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Restaurante do João. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
